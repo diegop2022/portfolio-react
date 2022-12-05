@@ -10,7 +10,7 @@ function Footer() {
             <div className="socialMedia">
                 <a href="https://www.linkedin.com/in/diego-pena-3738b0240/"><LinkedInIcon></LinkedInIcon></a>
                 <a href="https://github.com/diegop2022"><GitHubIcon></GitHubIcon></a>
-                <a mailto="mailto:diegopena2022@gmail.com"><EmailIcon></EmailIcon></a>
+                <a href="mailto:diegopena2022@gmail.com"><EmailIcon></EmailIcon></a>
             </div>
             <p>&copy; 2022 diegopenaportfolio.com</p>
         </div>

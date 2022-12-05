@@ -12,7 +12,7 @@ function Home() {
                 <p>Full-Stack Web Developer who is avid in learning new skills and passionate in seeking new knowledge and experiences</p>
                 <a href="https://www.linkedin.com/in/diego-pena-3738b0240/"><LinkedInIcon></LinkedInIcon></a>
                 <a href="https://github.com/diegop2022"><GitHubIcon></GitHubIcon></a>
-                <a mailto="mailto:diegopena2022@gmail.com"><EmailIcon></EmailIcon></a>
+                <a href="mailto:diegopena2022@gmail.com"><EmailIcon></EmailIcon></a>
             </div>
         </div>
         <div className="skills">
