@@ -1,0 +1,30 @@
+form {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+form * {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.message {
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+}
