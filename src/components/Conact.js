@@ -1,68 +1,24 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../helpers/Validate'
+import React from 'react';
 import "../styles/Contact.css"
 
 
 function ContactForm() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
-    const [errorMessage, setErrorMessage] = useState('');
-
-    const { name, email, message } = formState;
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
-        }
-    };
-
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-        }
-    };
-
     return (
-        <section>
+        <section class="contact-box">
             <h1>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+            <form action="https://formsubmit.co/a06558fcc3bc241b3fa6ceb3c62acd34" method="POST">
+                <div class="name">
+                    <label>Name </label>
+                    <input type="text" name="name" required />
                 </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                <div class="email">
+                    <label>Email </label>
+                    <input type="email" name="email" required />
                 </div>
-                <div className="message">
-                    <div>
-                        <label htmlFor="message">Message:</label>
-                    </div>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                <div class="message">
+                    <textarea name="message" placeholder="message" required></textarea>
                 </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             </form>
         </section>
     )

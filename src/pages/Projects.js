@@ -1,8 +1,5 @@
 import React from "react";
 import ProjectItem from "../components/ProjectItem";
-import Project1 from "../assets/project1.PNG";
-import Project2 from "../assets/project2.PNG";
-import Project3 from "../assets/project3.PNG";
 import { ProjectList } from "../helpers/ProjectList"
 
 import "../styles/Projects.css";
