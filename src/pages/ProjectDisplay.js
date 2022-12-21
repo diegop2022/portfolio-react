@@ -8,16 +8,19 @@ import "../styles/ProjectDisplay.css"
 function ProjectDisplay() {
     const { id } = useParams();
     const project = ProjectList[id];
+    console.log(project.deploy)
 
     return (
         <div className="project">
             <h1>{project.name}</h1>
-            <img src={project.image} alt="project" />
+            <img src={project.image} alt={project.name} />
             <p>
-                <b>Skills:</b> {project.skills}
+                <b>Deployed Link:</b> <a href={project.deploy} target="_blank" rel="noreferrer noopener"><GitHubIcon></GitHubIcon></a>
             </p>
-            <a href="https://github.com/diegop2022"><GitHubIcon></GitHubIcon></a>
-        </div>
+            <p>
+                <b>About the project:</b> {project.desc}
+            </p>
+        </div >
     );
 }
 
