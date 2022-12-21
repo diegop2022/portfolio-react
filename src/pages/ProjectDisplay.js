@@ -2,7 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList"
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import { Link, useLocation } from "react-router-dom";
+import Navbar from '../components/Navbar'
 import "../styles/ProjectDisplay.css"
 
 function ProjectDisplay() {
@@ -20,6 +21,7 @@ function ProjectDisplay() {
             <p>
                 <b>About the project:</b> {project.desc}
             </p>
+            <button class="backbtn"><Link to="/Projects" class="back">Back</Link></button>
         </div >
     );
 }

@@ -1,6 +1,4 @@
 .project {
-    width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +24,19 @@
 .project svg {
     font-size: 60px;
     color: #3e497a;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+}
+
+.backbtn {
+    padding: 20px;
+    font-size: 30px;
+    background-color: #21325e;
+    border: #3e497a;
+    border-radius: 10px;
 }
 
 

@@ -7,28 +7,20 @@
     font-family: "Arial", sans-serif;
 }
 
-label {
-    font-size: 20px;
+.heading {
+    font-size: 30px;
 }
 
 input {
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     font-size: 20px;
 }
 
 textarea {
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     font-size: 20px;
-}
-
-.name {
-    padding: 10px;
-}
-
-.email {
-    padding: 10px;
 }
 
 .message {
@@ -36,10 +28,12 @@ textarea {
 }
 
 button {
-    background-color: black;
+    background-color: #21325e;
+    border: #3e497a;
     color: white;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 8px;
 }
 
 button:hover {

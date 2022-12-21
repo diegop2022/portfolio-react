@@ -61,7 +61,7 @@ export const ProjectList = [
         name: "Note Taker",
         image: Project9,
         deploy: "https://calm-sea-00722.herokuapp.com/notes",
-        desc: "Application that allows user to create, save and delete notes using Express.js."
+        desc: "Application that allows users to create, save and delete notes using Express.js."
     }
 ]
 
